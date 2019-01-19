@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">GetOut!</string>
+    <string name="title">Title</string>
+    <string name="hour">Hour</string>
+    <string name="location">Location</string>
+    <string name="description">Description</string>
+    <string name="date">Date</string>
+    <string name="participants">Participants</string>
+    <string name="currentPart">Current Participants</string>
+    <string name="joinButton">Join</string>
+    <string name="author">Author</string>
+    <string name="userName">Username</string>
+    <string name="edit">Edit</string>
+    <string name="join">JOIN</string>
+    <string name="delete">DELETE</string>
+    <string name="signUp"><b>SIGN UP</b></string>
+    <string name="logIn"><b>LOG IN</b></string>
+    <string name="email"><b>E-MAIL</b></string>
+    <string name="password"><b>PASSWORD</b></string>
+    <string name="passwordConfirm"><b>PASSWORD CONFIRM</b></string>
+    <string name="sendCode"><b>SEND MAIL</b></string>
+    <string name="forgot"><b>FORGOT</b></string>
+
+    <string-array name="event_types">
+        <item>Sport</item>
+        <item>Transportation</item>
+        <item>Meal</item>
+        <item>Game</item>
+        <item>Group Work</item>
+    </string-array>
+</resources>

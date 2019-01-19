@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp">
+
+    <EditText
+        android:id="@+id/place"
+        android:layout_width="360dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Place"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/type"
+        app:layout_constraintStart_toStartOf="@+id/numberOfPart"
+        app:layout_constraintTop_toBottomOf="@+id/numberOfPart" />
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/get_out_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></include>
+
+    <Spinner
+        android:id="@+id/type"
+        android:layout_width="161dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="8dp"
+        android:entries="@array/event_types"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toTopOf="@+id/place"
+        app:layout_constraintEnd_toEndOf="@+id/eventTitleEditTextID"
+        app:layout_constraintTop_toTopOf="@+id/numberOfPart"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="161dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:editable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="Date"
+        android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/descriptionPlaceHolder"
+        app:layout_constraintEnd_toStartOf="@+id/time"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/place"
+        app:layout_constraintTop_toBottomOf="@+id/place" />
+
+    <EditText
+        android:id="@+id/time"
+        android:layout_width="161dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:editable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="Time"
+        android:inputType="time"
+        app:layout_constraintBottom_toTopOf="@+id/descriptionPlaceHolder"
+        app:layout_constraintEnd_toEndOf="@+id/place"
+        app:layout_constraintTop_toBottomOf="@+id/place" />
+
+    <EditText
+        android:id="@+id/descriptionPlaceHolder"
+        android:layout_width="367dp"
+        android:layout_height="256dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="top|left"
+        android:hint="Description..."
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:maxLines="10"
+        android:minLines="6"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/save"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="71dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/get_out_create"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/include"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/discard"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/close_icon"
+        android:gravity="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/include"
+        app:layout_constraintEnd_toEndOf="@+id/save"
+        app:layout_constraintHorizontal_bias="0.028"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <EditText
+        android:id="@+id/eventTitleEditTextID"
+        android:layout_width="360dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Title"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <EditText
+        android:id="@+id/numberOfPart"
+        android:layout_width="174dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Participants"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/eventTitleEditTextID"
+        app:layout_constraintTop_toBottomOf="@+id/eventTitleEditTextID" />
+
+</android.support.constraint.ConstraintLayout>
