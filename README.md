@@ -8,16 +8,25 @@ Having been created by students, events can be seen by other users of this appli
 they can attend these events that have specific time-duration and place.
 
 # Libraries and Dependancies
-Firebase - FireStore Cloud Database
-Kodlin-stdlib-jdk7 1.2.71
-MPAndroidChart 2.v3.1.0.alpha
-okHttp 3.12.0
-AndroidStudio 3.0
-Android SDK 28.0 (pie)
+*Firebase - FireStore Cloud Database
+
+*Kodlin-stdlib-jdk7 1.2.71
+
+*MPAndroidChart 2.v3.1.0.alpha
+
+*okHttp 3.12.0
+
+*AndroidStudio 3.0
+
+*Android SDK 28.0 (pie)
 
 # Contributor
-1-Muhammed Naci Dalkıran - DataBase, Catogarization, Models, 
-2-Tolga Çatalpınar - Login Screen, Varification, Layouts
-3-Çağlar Çankaya -  Layouts, Adapters, Actiivities
-4-Ali Taha Dinçer - Layouts, DataBase, Main Screen
-5-Sena Korkut - Models, Categarization
+*Muhammed Naci Dalkıran - DataBase, Catogarization, Models
+
+*Tolga Çatalpınar - Login Screen, Varification, Layouts
+
+*Çağlar Çankaya -  Layouts, Adapters, Actiivities
+
+*Ali Taha Dinçer - Layouts, DataBase, Main Screen
+
+*Sena Korkut - Models, Categarization
